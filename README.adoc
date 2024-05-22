@@ -18,7 +18,6 @@ endif::[]
 
 image::https://img.shields.io/badge/version-1.0.0-blue[]
 
-[sidcrete]
 == Dokumentation
 
 * Dokumentieren Sie hier grob Ihre durchgeführten Arbeiten, mit
@@ -29,6 +28,40 @@ image::https://img.shields.io/badge/version-1.0.0-blue[]
 ** Ev. Links zu den einzelnen Teilen
 
 IMPORTANT: Ziel ist es, dass die von Ihnen geleistete Arbeit auch "gefunden" und korrekt bewertet wird.
+
+=== Task 1
+Ich habe laut dem Tutorial alle Dateien erstellt und die MainActivity von Kotlin auf Java umgebaut.
+Bevor das ganze funktioniert hat, habe ich noch eine Version in der libs.versions.toml ändern müssen, da sonst immer ein Fehler gekommen ist.
+
+=== Task 2
+Zuerst habe ich das Laden der Todos implementiert. Daraufhin aber ich verschiedene Tabs hinzugefügt, bei denen man vom Homescreen auf den Todoscreen wechseln kann.
+Zum Schluss habe ich am Homescreen verschiedene counter für Anzahl an Todos und erledigten Todos hinzugefügt. Man kann jetzt auch eigene Todos hinzufügen, welche aber nur lokal gespeichert werden.
+
+Das Datenmodell schaut wiefolgt aus:
+
+[source,java]
+----
+public class Model {
+    public Todo[] todos = new Todo[0];
+    public int tabState = 0;
+    public String username = "McDagobert";
+}
+
+public class Todo {
+    public Long userId;
+    public Long id;
+    public String title;
+    public boolean completed;
+}
+----
+
+
+Das Ergebnis schaut wiefolgt aus: 
+
+image::img/view1.png[View1]
+image::img/view2.png[View2]
+
+
 
 == Aufgabe - Erstellen Sie das Basisprojekt
 
