@@ -58,8 +58,8 @@ public class Todo {
 
 Das Ergebnis schaut wiefolgt aus: 
 
-image::img/view1.png[View1]
-image::img/view2.png[View2]
+image::view1.png[View1]
+image::view2.png[View2]
 
 
 

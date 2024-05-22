@@ -1,8 +1,0 @@
-= Todo
-By Nell Paul
-
-== Task 1
-Ich habe laut dem Tutorial alle Dateien erstellt und die MainActivity von Kotlin auf Java umgebaut.
-Bevor das ganze funktioniert hat, habe ich noch eine Version in der libs.versions.toml ändern müssen, da sonst immer ein Fehler gekommen ist.
-
-== Task 2
