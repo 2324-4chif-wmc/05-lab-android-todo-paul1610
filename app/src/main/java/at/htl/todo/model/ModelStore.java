@@ -25,6 +25,9 @@ public class ModelStore extends Store<Model> {
     public void setTodoDone(Todo todo) {
         apply(model -> model.todos[todo.id.intValue() - 1].completed = !todo.completed);
     }
+    public void setTodoTitle(Todo todo, String title) {
+        apply(model -> model.todos[todo.id.intValue() - 1].title = title);
+    }
 
     public void addTodo(String content) {
         apply(model -> {
@@ -39,4 +42,5 @@ public class ModelStore extends Store<Model> {
     public void switchTabState(int index) {
         apply(model -> model.tabState = index);
     }
+    public void setEditTodo(Todo todo) {apply(model -> model.editTodo = todo);}
 }

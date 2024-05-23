@@ -45,6 +45,7 @@ class MainView {
 
     fun buildContent(activity: ComponentActivity) {
         todoService.getAll()
+        todoService.post()
         // activity.enableEdgeToEdge()
         activity.setContent {
             val viewModel = store

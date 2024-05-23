@@ -32,5 +32,17 @@ public class TodoService {
                     Log.e(TAG, "Error loading todos", e);
                     return null;
                 });
+
+    }
+    public void post() {
+        CompletableFuture
+                .supplyAsync(() ->
+                        new Todo(1L, 1L, "test", false)
+                )
+                .thenAccept(todoClient::post)
+                .exceptionally((e) -> {
+                    Log.e(TAG, "Error creating todo: ", e);
+                    return null;
+                });
     }
 }
