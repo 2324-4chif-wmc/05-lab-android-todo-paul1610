@@ -55,11 +55,15 @@ public class Todo {
 }
 ----
 
+Als Zustatz habe ich hinzugefügt, dass man ToDos bearbeiten kann.
+
 
 Das Ergebnis schaut wiefolgt aus: 
 
 image::view1.png[View1]
 image::view2.png[View2]
+image::view3.png[View3]
+image::view4.png[View4]
 
 
 
